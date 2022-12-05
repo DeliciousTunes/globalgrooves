@@ -56,7 +56,7 @@
         "url": "https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,400,500,600,700,800,900"
       }
     ],
-    "uniqCompNum": 122,
+    "uniqCompNum": 123,
     "versionPublish": "5.6.11",
     "imageResize": true,
     "cssOptimize": true,
@@ -10883,13 +10883,99 @@
           },
           "_name": "video2",
           "_sourceTheme": "snackm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video2\" group=\"Image & Video\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@ADDONS_PATH@/snackm5/components/_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"mbr-section-head\">\n            <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>ALUNE WADE</b></h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/5E7SZC18bjE?loop=1&autoplay=1\"></iframe>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>20. März 2023 - Ampere Muffatwerk München</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><b>Alune Wade ist ein musikalischer Weltenwanderer und verbindet den Nahen Osten mit westafrikanischen Afrobeat, arabisch-andalusischen Rhythmen und amerikanischem Jazz.\n<br></b>\n<br>Das “Supertalent” am Bass (Deutschlandfunk Kultur) feiert sein neuestes Album “Sultan” mit seinem Münchner Label enja/yellowbirds:  Der Bassist, Sänger und Komponist führt auf eine musikalische Reise zwischen West- und Nordafrika, die sich bis nach Äthiopien erstreckt. Vom „Blues“ aus Mali über Raï, Gnawa, Sufi-, Soul- und filmische Elemente, Musik aus Äthiopien bis zum Rap und Jazz reicht die breite Palette. Seine vielseitige und tief verwurzelte Musikalität ist eine Schlüsselzutat, die der aktuellen Jazzszene neuen Elan verleiht. Seine eklektischen, höchst kreativen Kompositionen bezeugen dies in seinem neuesten Album und auf den großen Bühnen der Welt. \n<br>\n<br>Alune Wade hat es mit seinem außergewöhnlichen musikalischen Können weit über seine senegalesischen Wurzeln gebracht: Von Marcus Miller bis Salif Keïta, Oumou Sangaré oder Gregory Porter - er ist nicht nur weltweit Gast bei den besten Instrumentalisten und Sängern unserer Zeit, sondern bringt in seinen eigenen Kompositionen Profis der ganzen Welt zusammen - insbesondere seines Heimat-Kontinents Afrika.\n<br>\n<br>Seine ruhige Autorität und intensive Kraft auf der Bühne manifestieren sich, wenn er das Publikum auf seine ganz besondere Jazzreise mitnimmt, dessen Klangbild in einem raffinierten urbanen Finish strahlt. Inspiration holt sich der Ausnahmemusiker auf Reisen von Paris aus in die dynamischen Metropolen New York und Dakar - er ist ein wahrer Vertreter Kosmopolitischer Musik!\n<br>\n<br><br></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video2\" group=\"Image & Video\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"6\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"8\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@ADDONS_PATH@/snackm5/components/_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"mbr-section-head\">\n            <h4 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>ALUNE WADE</b></h4>\n        </div>\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{videoWidth}} video-block\">\n                <div mbr-video class=\"video-wrapper\">\n                    <iframe src=\"https://youtu.be/5E7SZC18bjE?loop=1&autoplay=1\"></iframe>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg\">\n                <div class=\"text-wrapper\">\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>20. März 2023 - Ampere Muffatwerk München</b></h5>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text\"><b>Alune Wade ist ein musikalischer Weltenwanderer und verbindet den Nahen Osten mit westafrikanischen Afrobeat, arabisch-andalusischen Rhythmen und amerikanischem Jazz.\n<br></b>\n<br>Das “Supertalent” am Bass (Deutschlandfunk Kultur) feiert sein neuestes Album “Sultan” mit seinem Münchner Label enja/yellowbirds:  Der Bassist, Sänger und Komponist führt auf eine musikalische Reise zwischen West- und Nordafrika, die sich bis nach Äthiopien erstreckt. Vom „Blues“ aus Mali über Raï, Gnawa, Sufi-, Soul- und filmische Elemente, Musik aus Äthiopien bis zum Rap und Jazz reicht die breite Palette. Seine vielseitige und tief verwurzelte Musikalität ist eine Schlüsselzutat, die der aktuellen Jazzszene neuen Elan verleiht. Seine eklektischen, höchst kreativen Kompositionen bezeugen dies in seinem neuesten Album und auf den großen Bühnen der Welt. \n<br>\n<br>Alune Wade hat es mit seinem außergewöhnlichen musikalischen Können weit über seine senegalesischen Wurzeln gebracht: Von Marcus Miller bis Salif Keïta, Oumou Sangaré oder Gregory Porter - er ist nicht nur weltweit Gast bei den besten Instrumentalisten und Sängern unserer Zeit, sondern bringt in seinen eigenen Kompositionen Profis der ganzen Welt zusammen - insbesondere seines Heimat-Kontinents Afrika.\n<br>\n<br>Seine ruhige Autorität und intensive Kraft auf der Bühne manifestieren sich, wenn er das Publikum auf seine ganz besondere Jazzreise mitnimmt, dessen Klangbild in einem raffinierten urbanen Finish strahlt. Inspiration holt sich der Ausnahmemusiker auf Reisen von Paris aus in die dynamischen Metropolen New York und Dakar - er ist ein wahrer Vertreter Kosmopolitischer Musik!\n<br>\n<br><i><b>\"Musiker &amp; Co-Komponist des legendären Albums Afrodeezia von Marcus Miller\"</b></i><br><br></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tltlMQL7i1",
           "_anchor": "video2-2u",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "position": "relative",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            ".content_box": {
+              "padding": "2rem 15%",
+              "background-color": "@contentColor",
+              "text-align": "center",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "height": "100%",
+              "position": "relative",
+              "@media (max-width: 991px)": {
+                "margin-top": "30px",
+                "padding": "65px 30px",
+                ".shape": {
+                  "width": "auto",
+                  "padding": "0 1rem"
+                }
+              }
+            },
+            ".shape": {
+              "position": "absolute",
+              "z-index": "1",
+              "top": "50%",
+              "left": "50%",
+              "width": "100%",
+              "transform": "translate(-50%, -50%)",
+              "opacity": "(@imgOpacity * 1)",
+              "padding": "0 100px",
+              "img": {
+                "width": "100%",
+                "height": "100%",
+                "object-fit": "contain"
+              }
+            },
+            ".mbr-text": {
+              "line-height": "1",
+              "color": "#202020",
+              "position": "relative",
+              "z-index": "2",
+              "text-align": "left"
+            },
+            ".video-wrapper": {
+              "img, iframe": {
+                "max-height": "400px",
+                "object-fit": "cover"
+              }
+            },
+            "& when (@bgColor2) and (@bg-type = 'color')": {
+              ".two_background": {
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "width": "100%",
+                "height": "(@bgHeight * 10%)",
+                "background-color": "@twoBgColor",
+                "z-index": "0"
+              }
+            }
+          },
+          "_name": "video2",
+          "_sourceTheme": "bistrom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video2 bistro_video2\" group=\"Images & Videos\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Shape\" name=\"showShape\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"imgOpacity\" min=\".1\" max=\"1\" step=\".1\" value=\"0.5\" condition=\"showShape\">\n        <input type=\"color\" title=\"Background\" value=\"#fef2f2\" name=\"contentColor\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Second Color\" name=\"bgColor2\" condition=\"bg.type == 'color'\">\n        <input type=\"color\" title=\"Color\" value=\"#fef2f2\" name=\"twoBgColor\" condition=\"bgColor2 && bg.type == 'color'\">\n        <input type=\"range\" name=\"bgHeight\" title=\"Proportion\" min=\"1\" max=\"10\" step=\"1\" value=\"9\" condition=\"bgColor2 && bg.type == 'color'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n    <div class=\"two_background\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-class=\"{'flex-row-reverse' : reverse}\">\n            <div class=\"col-12 col-md-12 col-lg-6\">\n                <div class=\"video-block\">\n                    <div mbr-video class=\"video-wrapper\">\n                        <iframe src=\"https://youtu.be/RuQZsqoTwBo?loop=0&autoplay=0\"></iframe>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-12 col-lg-6\">\n                <div class=\"content_box\">\n                    <p class=\"mbr-text mb-0 mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\">„Sultan“ ist eines der spannendsten Alben, die dieses Jahr aus und über Afrika erschienen sind.” - BRF1 Jazztime, 2022&nbsp;<br></p>\n                    <div class=\"shape\" mbr-if=\"showShape\">\n                        <img src=\"../_images/signature_pink.png\" alt>\n                    </div>\n                </div>\n            </div>\n        </div>\n        \n    </div>\n</section>",
+          "_cid": "tp8Gk1ZDSY",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "video2-3e"
         },
         {
           "alias": false,
@@ -10962,7 +11048,7 @@
           },
           "_name": "features2",
           "_sourceTheme": "bistrom5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"Features2\" group=\"Features\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Auto Size\" name=\"autoSize\" checked>\n        <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"!autoSize\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Image</header>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"7\" step=\"1\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Color\" value=\"#eae8e4\" name=\"borderColor\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n            <div class=\"col-12 col-lg\" mbr-if=\"showSubtitle || showTitle || showText || showButtons\">\n                <div class=\"main_header\">\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\">A good subtitle</h4>\n                    <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">TICKETS</h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\"><b>Mo 20.03.23<br>Einlass: 19:00Uhr | Beginn: 20:00Uhr\n<br>Ort: Ampere München\n<br>VVK € 26 zzgl. Gebühren&nbsp;</b><br>präsentiert von enja records/yellobird, Global Grooves Munich und Delicious Tunes<br>Veranstalter: Muffatwerk.&nbsp;<br><br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-primary-outline\" href=\"https://www.muffatwerk.de/de/events/view/6249/alune-wade\" data-app-placeholder=\"Type Text\" target=\"_blank\">Jetzt Ticket kaufen!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image_wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/alune-wade-credit-hla-ammar-2-1362x946.jpg\" alt>\n                    </div>\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/mussa-freedesign-alune-wade-st-louis-jazzfestival-2022-526x526.jpg\" alt>\n                    </div>\n                </div>\n            </div>                    \n        </div>\n    </div>\n    \n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"Features2\" group=\"Features\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Auto Size\" name=\"autoSize\" checked>\n        <input type=\"range\" name=\"imageHeight\" title=\"Height\" min=\"1\" max=\"5\" step=\"1\" value=\"4\" condition=\"!autoSize\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Image</header>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"7\" step=\"1\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Color\" value=\"#eae8e4\" name=\"borderColor\" condition=\"showBorder\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\" mbr-class=\"{'flex-row-reverse': reverse}\">\n            <div class=\"col-12 col-lg\" mbr-if=\"showSubtitle || showTitle || showText || showButtons\">\n                <div class=\"main_header\">\n                    <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-4\">A good subtitle</h4>\n                    <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">TICKETS</h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\"><b>Mo 20.03.23<br>Einlass: 19:00Uhr | Beginn: 20:00Uhr\n<br>Ort: Ampere München\n<br>VVK € 26 zzgl. Gebühren&nbsp;</b><br>präsentiert von enja records/yellobird, Global Grooves Munich und Delicious Tunes<br>Veranstalter: Muffatwerk mit freundlicher Unterstützung der Stadt München.<br><br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-primary-outline\" href=\"https://www.muffatwerk.de/de/events/view/6249/alune-wade\" data-app-placeholder=\"Type Text\" target=\"_blank\">Jetzt Ticket kaufen!</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image_wrapper\">\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/alune-wade-credit-hla-ammar-2-1362x946.jpg\" alt>\n                    </div>\n                    <div class=\"item-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/mussa-freedesign-alune-wade-st-louis-jazzfestival-2022-526x526.jpg\" alt>\n                    </div>\n                </div>\n            </div>                    \n        </div>\n    </div>\n    \n</section>",
           "_cid": "tltlMR6cTc",
           "_anchor": "features2-2v",
           "_protectedParams": [],
@@ -11056,6 +11142,44 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".image-wrapper, img": {
+              "width": "100%",
+              "object-fit": "contain"
+            },
+            "img": {
+              "display": "inline-block",
+              "width": "(@imageWidth * 3rem)"
+            },
+            ".mbr-section-title": {
+              "margin": "25px 0"
+            },
+            ".mbr-text": {
+              "margin-bottom": "19px"
+            }
+          },
+          "_name": "article1",
+          "_sourceTheme": "bistrom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"Article1\" group=\"Article\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <input type=\"range\" inline title=\"Width\" name=\"imageWidth\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"showImage\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/alune-wade-1256x904.png\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#eae8e4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"row {{contentAlign}}\">\n                <div class=\"col-12 col-md-12 col-lg-{{contentWidth}} align-center\" mbr-if=\"showSubtitle || showTitle || showText\">\n                    <div class=\"main_header text-center text-white\">\n                        <div class=\"image-wrapper\" mbr-if=\"showImage\">\n                            <img src=\"@THEME_PATH@/components/_images/logo_orange.png\" alt=\"Mobirise\">\n                        </div>\n                        <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .image-wrapper\" mbr-theme-style=\"display-5\"><div>“a bass guitarist from Senegal, who is a must-see..”&nbsp;</div><div>&nbsp;— North Sea Jazz Festival, 2022</div></h3>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex voluptatem voluptas aut quod, autem obcaecati molestiae optio consequuntur esse dignissimos quasi alias, dolorem cum, possimus. Aspernatur unde corporis voluptatum?</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-white\" href=\"#\" data-app-placeholder=\"Type Text\">VIEW MORE</a></div>\n                    </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_cid": "tltlMS8vXl",
+          "_anchor": "article1-2y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "_name": "clients2",
           "_sourceTheme": "modernm4",
           "_styles": {
@@ -11124,44 +11248,6 @@
           "_isUserblock": true,
           "_cid": "tltlMRIP9Q",
           "_anchor": "clients2-2x",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            ".image-wrapper, img": {
-              "width": "100%",
-              "object-fit": "contain"
-            },
-            "img": {
-              "display": "inline-block",
-              "width": "(@imageWidth * 3rem)"
-            },
-            ".mbr-section-title": {
-              "margin": "25px 0"
-            },
-            ".mbr-text": {
-              "margin-bottom": "19px"
-            }
-          },
-          "_name": "article1",
-          "_sourceTheme": "bistrom5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"Article1\" group=\"Article\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value>Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\">\n        <input type=\"range\" inline title=\"Width\" name=\"imageWidth\" min=\"1\" max=\"5\" step=\"1\" value=\"2\" condition=\"showImage\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/alune-wade-1256x904.png\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#eae8e4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"row {{contentAlign}}\">\n                <div class=\"col-12 col-md-12 col-lg-{{contentWidth}} align-center\" mbr-if=\"showSubtitle || showTitle || showText\">\n                    <div class=\"main_header text-center text-white\">\n                        <div class=\"image-wrapper\" mbr-if=\"showImage\">\n                            <img src=\"@THEME_PATH@/components/_images/logo_orange.png\" alt=\"Mobirise\">\n                        </div>\n                        <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .image-wrapper\" mbr-theme-style=\"display-5\"><div>“a bass guitarist from Senegal, who is a must-see..”&nbsp;</div><div>&nbsp;— North Sea Jazz Festival, 2022</div></h3>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-4\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex voluptatem voluptas aut quod, autem obcaecati molestiae optio consequuntur esse dignissimos quasi alias, dolorem cum, possimus. Aspernatur unde corporis voluptatum?</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-white\" href=\"#\" data-app-placeholder=\"Type Text\">VIEW MORE</a></div>\n                    </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_cid": "tltlMS8vXl",
-          "_anchor": "article1-2y",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

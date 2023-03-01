@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "miroca-paris.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "bistrom5",
       "title": "BistroM5",
@@ -61,7 +61,7 @@
     "imageResize": true,
     "cssOptimize": true,
     "favicon": false,
-    "mbrsiteDomain": "qiaz4qlbcj",
+    "mbrsiteDomain": "3ixzwr7ubc",
     "lazyLoad": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -77,10 +77,10 @@
       "opacity": "99",
       "opacityOverlay": "80",
       "text": "Diese Website verwendet Cookies. Klicken Sie auf „Akzeptieren“, um Cookies zu akzeptieren und direkt unsere Website besuchen zu können. <a href='datenschutz.html'>Datenschutz</a>.",
-      "textButton": "Aktzeptieren"
+      "textButton": "Akzeptieren"
     },
-    "gdpr": false,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "gdpr": false
   },
   "pages": {
     "index.html": {

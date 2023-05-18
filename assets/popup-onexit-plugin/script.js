@@ -1,3 +1,3 @@
 
-(function(){document.addEventListener("DOMContentLoaded",function(){if(!document.querySelector("html").classList.contains("is-builder")){var c=!0;document.addEventListener("mouseleave",function(){c&&(document.querySelectorAll(".mbr-popup[data-on-exit]").forEach(function(b){var a;"undefined"!==typeof bootstrap?("undefined"!==typeof bootstrap.Modal.getInstance&&(a=bootstrap.Modal.getInstance(b)),a||(a=new bootstrap.Modal(b),{keyboard:!1}),a.show()):"undefined"!==typeof jQuery&&$(b).modal({keyboard:!1})}),
-c=!1)})}})})();
+(function(){function a(){if(!document.querySelector("html").classList.contains("is-builder")){var a=!0;document.addEventListener("mouseleave",function(){a&&(document.querySelectorAll(".mbr-popup[data-on-exit]").forEach(function(a){var b;"undefined"!==typeof bootstrap?("undefined"!==typeof bootstrap.Modal.getInstance&&(b=bootstrap.Modal.getInstance(a)),b||(b=new bootstrap.Modal(a),{keyboard:!1}),b.show()):"undefined"!==typeof jQuery&&$(a).modal({keyboard:!1})}),a=!1)})}}"complete"===document.readyState||
+"interactive"===document.readyState?a():document.addEventListener("DOMContentLoaded",function(){a()})})();

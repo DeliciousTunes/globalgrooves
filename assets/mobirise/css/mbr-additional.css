@@ -812,13 +812,13 @@ a {
   width: 100%;
 }
 .cid-tB1K0bNpwu .navbar-dropdown {
-  background: #ffffff !important;
+  background: #000000 !important;
   padding: 0;
   position: fixed;
 }
 .cid-tB1K0bNpwu .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff !important;
-  background: #ffffff;
+  background: #000000 !important;
+  background: #000000;
 }
 .cid-tB1K0bNpwu .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -827,7 +827,7 @@ a {
 @media (max-width: 991px) {
   .cid-tB1K0bNpwu .menu_box .navbar.opened,
   .cid-tB1K0bNpwu .menu_box .navbar-collapse {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
     transition: all 0s ease 0s;
   }
 }
@@ -908,7 +908,7 @@ a {
     width: 40px;
     height: 2px;
     border-right: 5px;
-    background-color: #000000;
+    background-color: #c8d814;
   }
   .cid-tB1K0bNpwu .offcanvas_box button.btn_offcanvas .hamburger span:nth-child(1) {
     top: 18px;
@@ -1274,7 +1274,7 @@ a {
   transition: all 0.2s;
   position: relative;
   align-self: center;
-  color: #ffffff;
+  color: #000000;
   background: #c8d814;
 }
 .cid-tB1K0bNpwu button.navbar-toggler .hamburger span {
@@ -1284,7 +1284,7 @@ a {
   width: 26px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #c8d814;
 }
 .cid-tB1K0bNpwu button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -2178,13 +2178,13 @@ a {
   width: 100%;
 }
 .cid-u1HMoArqSR .navbar-dropdown {
-  background: #ffffff !important;
+  background: #000000 !important;
   padding: 0;
   position: fixed;
 }
 .cid-u1HMoArqSR .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff !important;
-  background: #ffffff;
+  background: #000000 !important;
+  background: #000000;
 }
 .cid-u1HMoArqSR .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -2193,7 +2193,7 @@ a {
 @media (max-width: 991px) {
   .cid-u1HMoArqSR .menu_box .navbar.opened,
   .cid-u1HMoArqSR .menu_box .navbar-collapse {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
     transition: all 0s ease 0s;
   }
 }
@@ -2274,7 +2274,7 @@ a {
     width: 40px;
     height: 2px;
     border-right: 5px;
-    background-color: #000000;
+    background-color: #c8d814;
   }
   .cid-u1HMoArqSR .offcanvas_box button.btn_offcanvas .hamburger span:nth-child(1) {
     top: 18px;
@@ -2640,7 +2640,7 @@ a {
   transition: all 0.2s;
   position: relative;
   align-self: center;
-  color: #ffffff;
+  color: #000000;
   background: #c8d814;
 }
 .cid-u1HMoArqSR button.navbar-toggler .hamburger span {
@@ -2650,7 +2650,7 @@ a {
   width: 26px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #c8d814;
 }
 .cid-u1HMoArqSR button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -3023,13 +3023,13 @@ a {
   width: 100%;
 }
 .cid-u1HNF4Ty3G .navbar-dropdown {
-  background: #ffffff !important;
+  background: #000000 !important;
   padding: 0;
   position: fixed;
 }
 .cid-u1HNF4Ty3G .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #ffffff !important;
-  background: #ffffff;
+  background: #000000 !important;
+  background: #000000;
 }
 .cid-u1HNF4Ty3G .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -3038,7 +3038,7 @@ a {
 @media (max-width: 991px) {
   .cid-u1HNF4Ty3G .menu_box .navbar.opened,
   .cid-u1HNF4Ty3G .menu_box .navbar-collapse {
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
     transition: all 0s ease 0s;
   }
 }
@@ -3119,7 +3119,7 @@ a {
     width: 40px;
     height: 2px;
     border-right: 5px;
-    background-color: #000000;
+    background-color: #c8d814;
   }
   .cid-u1HNF4Ty3G .offcanvas_box button.btn_offcanvas .hamburger span:nth-child(1) {
     top: 18px;
@@ -3485,7 +3485,7 @@ a {
   transition: all 0.2s;
   position: relative;
   align-self: center;
-  color: #ffffff;
+  color: #000000;
   background: #c8d814;
 }
 .cid-u1HNF4Ty3G button.navbar-toggler .hamburger span {
@@ -3495,7 +3495,7 @@ a {
   width: 26px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #c8d814;
 }
 .cid-u1HNF4Ty3G button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;

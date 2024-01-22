@@ -2,7 +2,7 @@ body {
   font-family: Syne;
 }
 .display-1 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 4rem;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -11,7 +11,7 @@ body {
   font-size: 5rem;
 }
 .display-2 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3.56rem;
   line-height: 1;
   letter-spacing: -0.03em;
@@ -20,7 +20,7 @@ body {
   font-size: 4.45rem;
 }
 .display-4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1em;
   letter-spacing: inherit;
@@ -29,7 +29,7 @@ body {
   font-size: 1.25rem;
 }
 .display-5 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.9rem;
   line-height: 1.021em;
   letter-spacing: 0;
@@ -38,7 +38,7 @@ body {
   font-size: 3.625rem;
 }
 .display-7 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   line-height: inherit;
   letter-spacing: 0;
@@ -591,7 +591,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1em;
   letter-spacing: inherit;
@@ -606,7 +606,7 @@ a:hover {
   border-color: #ffffff !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1em;
   letter-spacing: inherit;

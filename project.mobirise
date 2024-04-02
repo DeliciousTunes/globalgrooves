@@ -49,7 +49,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 95,
+    "uniqCompNum": 102,
     "versionPublish": "5.6.11",
     "screenshot": "screenshot.png",
     "cssOptimize": true,
@@ -779,27 +779,188 @@
                 "padding": "0 20px"
               }
             },
+            ".row": {
+              "justify-content": "center"
+            },
             ".title-wrapper": {
-              ".mbr-section-title": {
-                "margin-bottom": "0",
-                "span": {
-                  "color": "@title"
+              ".mbr-section-subtitle": {
+                "margin-bottom": "20px",
+                "@media (max-width: 768px)": {
+                  "margin-bottom": "10px"
+                }
+              },
+              ".title-wrap": {
+                "display": "flex",
+                "justify-content": "space-between",
+                "align-items": "center",
+                "padding-bottom": "45px",
+                "margin-bottom": "50px",
+                "& when (@showBorder)": {
+                  "border-bottom": "2px solid @border"
+                },
+                "@media (max-width: 768px)": {
+                  "display": "block",
+                  "padding-bottom": "20px",
+                  "margin-bottom": "30px"
+                },
+                ".mbr-section-title": {
+                  "margin-bottom": "0",
+                  "@media (max-width: 768px)": {
+                    "margin-bottom": "10px"
+                  }
+                },
+                ".mbr-section-btn": {
+                  ".btn": {
+                    "border": "none",
+                    "padding": "0",
+                    "min-width": "92px",
+                    "&:hover, &:focus": {
+                      "background-color": "transparent !important",
+                      "color": "@border !important",
+                      "opacity": ".5"
+                    },
+                    ".mbr-iconfont": {
+                      "margin-left": "18px"
+                    }
+                  }
+                }
+              }
+            },
+            ".item": {
+              "margin-bottom": "32px",
+              "a": {
+                "&:hover": {
+                  ".item-wrapper .item-img img": {
+                    "transform": "scale(1.05)"
+                  },
+                  ".item-wrapper .item-img .item-content": {
+                    ".subtitle-wrap .item-subtitle": {
+                      "background-color": "@active"
+                    },
+                    ".title-wrap": {
+                      "transform": "translateY(0)",
+                      ".link-wrap": {
+                        ".item-link": {
+                          "opacity": "1"
+                        }
+                      }
+                    }
+                  }
+                },
+                ".item-wrapper": {
+                  "overflow": "hidden",
+                  ".item-img": {
+                    "position": "relative",
+                    "height": "460px",
+                    "img": {
+                      "position": "absolute",
+                      "top": "0",
+                      "left": "0",
+                      "height": "100%",
+                      "width": "100%",
+                      "object-fit": "cover",
+                      "transition": "all 0.3s ease-out",
+                      "pointer-events": "visible"
+                    },
+                    "&::before": {
+                      "content": "''",
+                      "position": "absolute",
+                      "height": "100%",
+                      "width": "100%",
+                      "background-image": "linear-gradient(180deg, transparent, @over)",
+                      "opacity": ".8",
+                      "pointer-events": "none",
+                      "z-index": "1"
+                    },
+                    ".item-content": {
+                      "position": "relative",
+                      "display": "flex",
+                      "flex-direction": "column",
+                      "justify-content": "space-between",
+                      "padding": "30px",
+                      "height": "100%",
+                      "pointer-events": "none",
+                      "z-index": "2",
+                      "@media (max-width: 768px)": {
+                        "padding": "25px"
+                      },
+                      ".subtitle-wrap": {
+                        "pointer-events": "visible",
+                        ".item-subtitle": {
+                          "display": "inline-flex",
+                          "padding": "4px 18px",
+                          "margin-bottom": "6px",
+                          "background-color": "@subtitle",
+                          "transition": "all 0.3s ease-out"
+                        }
+                      },
+                      ".title-wrap": {
+                        "transform": "translateY(40px)",
+                        "transition": "all 0.3s ease-out",
+                        "pointer-events": "visible",
+                        "& when not (@showLink)": {
+                          "transform": "none"
+                        },
+                        ".item-title": {
+                          "margin-bottom": "16px"
+                        },
+                        ".desc-wrapper": {
+                          ".desc-wrap": {
+                            "display": "inline-flex",
+                            ".mbr-iconfont": {
+                              "margin-right": "14px",
+                              "color": "@icon"
+                            },
+                            ".item-desc": {
+                              "margin-bottom": "0"
+                            }
+                          }
+                        },
+                        ".link-wrap": {
+                          ".item-link": {
+                            "display": "inline-flex",
+                            "opacity": "0",
+                            "margin": "16px 0 0 0",
+                            "transition": "all 0.3s ease-out",
+                            ".mbr-iconfont": {
+                              "margin-left": "6px"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             },
             ".mbr-section-title": {
+              "color": "#c8d814"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#c8d814"
+            },
+            ".item-title": {
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "color": "#ffffff"
+            },
+            ".item-desc": {
+              "color": "#D2D3D5"
+            },
+            ".item-link": {
               "color": "#ffffff"
             }
           },
-          "_name": "content6",
+          "_name": "features6",
           "_sourceTheme": "vibem5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content6 vibem5\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"SecondaryColor\" value=\"#c8d814\" name=\"title\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\"><b>Discover music that you've never heard before</b><div><br></div></h2>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "u6qaBCIEcN",
-          "_anchor": "content6-1d",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features6 vibem5\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#000000\" name=\"border\" condition=\"showBorder\" selected>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showCardSubtitle\" checked>\n        <input type=\"color\" title=\"Subtitle BG\" value=\"#B29FE9\" name=\"subtitle\" condition=\"showCardSubtitle\" selected>\n        <input type=\"color\" title=\"Active BG\" value=\"#161616\" name=\"active\" condition=\"showCardSubtitle\" selected>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"checkbox\" title=\"Card Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" value=\"#C8D814\" name=\"icon\" condition=\"showIcon\" selected>\n        <input type=\"checkbox\" title=\"Card Link\" name=\"showLink\" checked>\n        <input type=\"color\" title=\"Card Overlay\" value=\"#000000\" name=\"over\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showTitle || showSubtitle || showButtons\">\n                <div class=\"title-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>Discover music that you've never heard before</b></h3>\n                    <div class=\"title-wrap\">\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Topkonzerte für<br>München&nbsp;</b></h2>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n                            <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                See All\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-image col-12 col-lg-4 col-md-6\">\n                <a href=\"nomfusi.html\">\n                    <div class=\"item-wrapper\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/nomfusi-2345x1381.jpg\" alt=\"Nomfusi - MINI Pavillon\">\n                            <div class=\"item-content\">\n                                <div class=\"subtitle-wrap\">\n                                    <h5 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-subtitle, .subtitle-wrap\" mbr-if=\"showCardSubtitle\">\n                                        <b>#afrosoul #southafrica</b>\n                                    </h5>\n                                </div>\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                        Nomfusi</h4>\n                                    <div class=\"desc-wrapper\">\n                                        <div class=\"desc-wrap\">\n                                            <span mbr-icon class=\"mobi-mbri mobi-mbri-calendar mbr-iconfont\" mbr-if=\"showIcon\"></span>\n                                            <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\" mbr-if=\"showDesc\">\n                                                22 Mai 2024, MINI Pavillon\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <div class=\"link-wrap\" mbr-if=\"showLink\">\n                                        <p class=\"item-link mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-link, .link-wrap\">\n                                            <b>See More</b>\n                                            <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"item features-image col-12 col-lg-4 col-md-6\">\n                <a href=\"alune-wade-2024.html\">\n                    <div class=\"item-wrapper\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/alune-wade-1-1080x1080.jpeg\" alt=\"Alune Wade - Ampere München 2024\">\n                            <div class=\"item-content\">\n                                <div class=\"subtitle-wrap\">\n                                    <h5 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-subtitle, .subtitle-wrap\" mbr-if=\"showCardSubtitle\">\n                                        <b>#africanjazz #bassgroove #afrobeat</b>\n                                    </h5>\n                                </div>\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                        Alune Wade</h4>\n                                    <div class=\"desc-wrapper\">\n                                        <div class=\"desc-wrap\">\n                                            <span mbr-icon class=\"mobi-mbri mobi-mbri-calendar mbr-iconfont\" mbr-if=\"showIcon\"></span>\n                                            <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\" mbr-if=\"showDesc\">\n                                                7 Juni 2024, Ampere Muffatwerk\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <div class=\"link-wrap\" mbr-if=\"showLink\">\n                                        <p class=\"item-link mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-link, .link-wrap\">\n                                            <b>See More</b>\n                                            <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"item features-image col-12 col-lg-4 col-md-6\">\n                <a href=\"nik-west.html\">\n                    <div class=\"item-wrapper\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/nik-west-4309x2423.jpg\" alt=\"Nik West - München MINI Pavillon\">\n                            <div class=\"item-content\">\n                                <div class=\"subtitle-wrap\">\n                                    <h5 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-subtitle, .subtitle-wrap\" mbr-if=\"showCardSubtitle\">\n                                        <b>#funk #rock #bass</b>\n                                    </h5>\n                                </div>\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                        Nik West</h4>\n                                    <div class=\"desc-wrapper\">\n                                        <div class=\"desc-wrap\">\n                                            <span mbr-icon class=\"mobi-mbri mobi-mbri-calendar mbr-iconfont\" mbr-if=\"showIcon\"></span>\n                                            <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\" mbr-if=\"showDesc\">\n                                                23 Juli 2025, MINI Pavillon\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <div class=\"link-wrap\" mbr-if=\"showLink\">\n                                        <p class=\"item-link mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-link, .link-wrap\">\n                                            <b>See More</b>\n                                            <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "u8OvjxhvX9",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "features6-2r"
         },
         {
           "alias": false,
@@ -851,80 +1012,150 @@
               "justify-content": "center"
             },
             ".title-wrapper": {
-              ".mbr-section-title": {
-                "margin-bottom": "60px",
-                "letter-spacing": "0",
+              ".mbr-section-subtitle": {
+                "margin-bottom": "20px",
                 "@media (max-width: 768px)": {
+                  "margin-bottom": "10px"
+                }
+              },
+              ".title-wrap": {
+                "display": "flex",
+                "justify-content": "space-between",
+                "align-items": "center",
+                "padding-bottom": "45px",
+                "margin-bottom": "50px",
+                "& when (@showBorder)": {
+                  "border-bottom": "2px solid @border"
+                },
+                "@media (max-width: 768px)": {
+                  "display": "block",
+                  "padding-bottom": "20px",
                   "margin-bottom": "30px"
+                },
+                ".mbr-section-title": {
+                  "margin-bottom": "0",
+                  "@media (max-width: 768px)": {
+                    "margin-bottom": "10px"
+                  }
+                },
+                ".mbr-section-btn": {
+                  ".btn": {
+                    "border": "none",
+                    "padding": "0",
+                    "min-width": "92px",
+                    "&:hover, &:focus": {
+                      "background-color": "transparent !important",
+                      "color": "@border !important",
+                      "opacity": ".5"
+                    },
+                    ".mbr-iconfont": {
+                      "margin-left": "18px"
+                    }
+                  }
                 }
               }
             },
             ".item": {
-              "margin-bottom": "45px",
-              "&:nth-child(2n)": {
-                "margin-top": "120px",
-                "@media (max-width: 992px)": {
-                  "margin-top": "0"
-                }
-              },
+              "margin-bottom": "32px",
               "a": {
                 "&:hover": {
                   ".item-wrapper .item-img img": {
-                    "transform": "scale(1.07)"
+                    "transform": "scale(1.05)"
+                  },
+                  ".item-wrapper .item-img .item-content": {
+                    ".subtitle-wrap .item-subtitle": {
+                      "background-color": "@active"
+                    },
+                    ".title-wrap": {
+                      "transform": "translateY(0)",
+                      ".link-wrap": {
+                        ".item-link": {
+                          "opacity": "1"
+                        }
+                      }
+                    }
                   }
                 },
                 ".item-wrapper": {
+                  "overflow": "hidden",
                   ".item-img": {
-                    "height": "670px",
-                    "overflow": "hidden",
-                    "@media (max-width: 768px)": {
-                      "height": "300px"
-                    },
+                    "position": "relative",
+                    "height": "460px",
                     "img": {
-                      "width": "100%",
+                      "position": "absolute",
+                      "top": "0",
+                      "left": "0",
                       "height": "100%",
+                      "width": "100%",
                       "object-fit": "cover",
-                      "transition": "all 0.3s ease-out"
-                    }
-                  },
-                  ".item-content": {
-                    "margin-top": "30px",
-                    ".desc-wrapper": {
-                      "margin-bottom": "16px",
-                      ".desc-wrap": {
-                        "padding-left": "50px",
-                        "position": "relative",
-                        "display": "inline-flex",
-                        "@media (max-width: 768px)": {
-                          "padding": "0"
+                      "transition": "all 0.3s ease-out",
+                      "pointer-events": "visible"
+                    },
+                    "&::before": {
+                      "content": "''",
+                      "position": "absolute",
+                      "height": "100%",
+                      "width": "100%",
+                      "background-image": "linear-gradient(180deg, transparent, @over)",
+                      "opacity": ".8",
+                      "pointer-events": "none",
+                      "z-index": "1"
+                    },
+                    ".item-content": {
+                      "position": "relative",
+                      "display": "flex",
+                      "flex-direction": "column",
+                      "justify-content": "space-between",
+                      "padding": "30px",
+                      "height": "100%",
+                      "pointer-events": "none",
+                      "z-index": "2",
+                      "@media (max-width: 768px)": {
+                        "padding": "25px"
+                      },
+                      ".subtitle-wrap": {
+                        "pointer-events": "visible",
+                        ".item-subtitle": {
+                          "display": "inline-flex",
+                          "padding": "4px 18px",
+                          "margin-bottom": "6px",
+                          "background-color": "@subtitle",
+                          "transition": "all 0.3s ease-out"
+                        }
+                      },
+                      ".title-wrap": {
+                        "transform": "translateY(40px)",
+                        "transition": "all 0.3s ease-out",
+                        "pointer-events": "visible",
+                        "& when not (@showLink)": {
+                          "transform": "none"
                         },
-                        "& when (@showLine)": {
-                          "&::before": {
-                            "content": "''",
-                            "position": "absolute",
-                            "top": "6px",
-                            "left": "0",
-                            "width": "35px",
-                            "height": "2px",
-                            "background-color": "@line",
-                            "@media (max-width: 768px)": {
-                              "display": "none"
+                        ".item-title": {
+                          "margin-bottom": "16px"
+                        },
+                        ".desc-wrapper": {
+                          ".desc-wrap": {
+                            "display": "inline-flex",
+                            ".mbr-iconfont": {
+                              "margin-right": "14px",
+                              "color": "@icon"
+                            },
+                            ".item-desc": {
+                              "margin-bottom": "0"
                             }
                           }
                         },
-                        ".mbr-desc": {
-                          "margin": "0 10px 0 0"
-                        },
-                        ".mbr-date": {
-                          "margin": "0"
+                        ".link-wrap": {
+                          ".item-link": {
+                            "display": "inline-flex",
+                            "opacity": "0",
+                            "margin": "16px 0 0 0",
+                            "transition": "all 0.3s ease-out",
+                            ".mbr-iconfont": {
+                              "margin-left": "6px"
+                            }
+                          }
                         }
-                      }
-                    },
-                    ".mbr-text": {
-                      "padding-left": "50px",
-                      "margin-bottom": "0",
-                      "@media (max-width: 768px)": {
-                        "padding": "0"
                       }
                     }
                   }
@@ -934,30 +1165,27 @@
             ".mbr-section-title": {
               "color": "#c8d814"
             },
-            ".mbr-desc": {
-              "color": "#000000"
-            },
-            ".mbr-date": {
-              "color": "#6a6e71"
-            },
-            ".mbr-text": {
-              "color": "#000000"
-            },
-            ".mbr-desc, .desc-wrapper": {
-              "color": "#ffffff"
-            },
-            ".mbr-text, .desc-wrapper": {
-              "color": "#ffffff"
-            },
-            ".mbr-date, .desc-wrapper": {
+            ".mbr-section-subtitle": {
               "color": "#c8d814"
+            },
+            ".item-title": {
+              "color": "#ffffff"
+            },
+            ".item-subtitle": {
+              "color": "#ffffff"
+            },
+            ".item-desc": {
+              "color": "#D2D3D5"
+            },
+            ".item-link": {
+              "color": "#ffffff"
             }
           },
-          "_name": "features5",
+          "_name": "features6",
           "_sourceTheme": "vibem5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5 vibem5\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Line\" name=\"showLine\" checked>\n        <input type=\"color\" title=\"Line Color\" value=\"#000000\" name=\"line\" condition=\"showLine\" selected>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"checkbox\" title=\"Card Date\" name=\"showDate\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\" mbr-if=\"showTitle || showSubtitle\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>LIVE KONZERTE FÜR MÜNCHEN</b></h2>\n                </div>\n            </div>\n        </div>\n        <div class=\"row\">\n            \n            <div class=\"item features-image col-12 col-lg-6 active\">\n                <a href=\"alune-wade-2024.html\">\n                    </a><div class=\"item-wrapper\"><a href=\"nomfusi.html\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/nomfusi-2345x1381.jpg\" alt data-slide-to=\"1\" data-bs-slide-to=\"1\">\n                        </div>\n                        </a><div class=\"item-content\"><a href=\"alune-wade-2024.html\">\n                            <div class=\"desc-wrapper\">\n                                <div class=\"desc-wrap\">\n                                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-desc, .desc-wrapper\" mbr-if=\"showDesc\"><b>Afro Soul Sensation (Südafrika)</b></p>\n                                    <p class=\"mbr-date mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-date, .desc-wrapper\" mbr-if=\"showDate\"><b>\n                                        •&nbsp; &nbsp;22. Mai 2024 </b>•  MINI Pavillon&nbsp;&nbsp;- Ticket jetzt erhältlich!</p>\n                                </div>\n                            </div>\n                            </a><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .desc-wrapper\" mbr-if=\"showText\"><a href=\"nomfusi.html\" class=\"text-primary\">NOMFUSI &gt;&gt;</a></p>\n                        </div>\n                    </div>\n                \n            </div><div class=\"item features-image col-12 col-lg-6\">\n                <a href=\"alune-wade-2024.html\">\n                    </a><div class=\"item-wrapper\"><a href=\"alune-wade-2024.html\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/alune-wade-1-1080x1080.jpeg\" alt data-slide-to=\"2\" data-bs-slide-to=\"2\">\n                        </div>\n                        </a><div class=\"item-content\"><a href=\"alune-wade-2024.html\">\n                            <div class=\"desc-wrapper\">\n                                <div class=\"desc-wrap\">\n                                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-desc, .desc-wrapper\" mbr-if=\"showDesc\"><b>Bass Groove, Afrobeat &amp; Jazz</b></p>\n                                    <p class=\"mbr-date mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-date, .desc-wrapper\" mbr-if=\"showDate\"><b>\n                                        •&nbsp; &nbsp;7. Juni 2024 • Ampere - Tickets jetzt erhältlich!</b></p>\n                                </div>\n                            </div>\n                            </a><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .desc-wrapper\" mbr-if=\"showText\"><a href=\"alune-wade-2024.html\">\n                                </a><a href=\"alune-wade-2024.html\" class=\"text-primary\">ALUNE WADE &gt;&gt;</a></p>\n                        </div>\n                    </div>\n                \n            </div><div class=\"item features-image col-12 col-lg-6\">\n                <a href=\"alune-wade-2024.html\">\n                    </a><div class=\"item-wrapper\"><a href=\"nik-west.html\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/nik-west-4309x2423.jpg\" alt data-slide-to=\"3\" data-bs-slide-to=\"3\">\n                        </div>\n                        </a><div class=\"item-content\"><a href=\"alune-wade-2024.html\">\n                            <div class=\"desc-wrapper\">\n                                <div class=\"desc-wrap\">\n                                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-desc, .desc-wrapper\" mbr-if=\"showDesc\"><b>PRINCESS OF FUNK (USA)</b></p>\n                                    <p class=\"mbr-date mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-date, .desc-wrapper\" mbr-if=\"showDate\"><b>\n                                        •&nbsp; &nbsp;23. Juli 2024&nbsp;&nbsp;</b> •&nbsp; MINI Pavillon - Tickets jetzt erhältlich</p>\n                                </div>\n                            </div>\n                            </a><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .desc-wrapper\" mbr-if=\"showText\"><a href=\"nik-west.html\" class=\"text-primary\">NIK WEST &gt;&gt;</a></p>\n                        </div>\n                    </div>\n                \n            </div><div class=\"item features-image col-12 col-lg-6\">\n                <a href=\"alune-wade-2024.html\">\n                    </a><div class=\"item-wrapper\"><a href=\"#\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/6-1080x1080.jpeg\" alt data-slide-to=\"4\" data-bs-slide-to=\"4\">\n                        </div>\n                        </a><div class=\"item-content\"><a href=\"alune-wade-2024.html\">\n                            <div class=\"desc-wrapper\">\n                                <div class=\"desc-wrap\">\n                                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-desc, .desc-wrapper\" mbr-if=\"showDesc\"><b>Zimrock - One of Africa's Best Afrofusion Bands</b></p>\n                                    <p class=\"mbr-date mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-date, .desc-wrapper\" mbr-if=\"showDate\"><b>\n                                        •&nbsp; coming soon&nbsp; - Herbst 2024</b></p>\n                                </div>\n                            </div>\n                            </a><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .desc-wrapper\" mbr-if=\"showText\">MOKOOMBA</p>\n                        </div>\n                    </div>\n                \n            </div><div class=\"item features-image col-12 col-lg-6\">\n                <a href=\"alune-wade-2024.html\">\n                    </a><div class=\"item-wrapper\"><a href=\"#\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/2-1080x1080.jpeg\" alt data-slide-to=\"5\" data-bs-slide-to=\"6\">\n                        </div>\n                        </a><div class=\"item-content\"><a href=\"alune-wade-2024.html\">\n                            <div class=\"desc-wrapper\">\n                                <div class=\"desc-wrap\">\n                                    <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-desc, .desc-wrapper\" mbr-if=\"showDesc\"><b>Afro-Latin Groove from Cabo Verde</b></p>\n                                    <p class=\"mbr-date mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-date, .desc-wrapper\" mbr-if=\"showDate\"><b>\n                                        •&nbsp; coming soon&nbsp;</b>- Herbst 2024</p>\n                                </div>\n                            </div>\n                            </a><p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text, .desc-wrapper\" mbr-if=\"showText\">MIROCA PARIS</p>\n                        </div>\n                    </div>\n                \n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "u6mIjW2JOA",
-          "_anchor": "features5-19",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features6 vibem5\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#000000\" name=\"border\" condition=\"showBorder\" selected>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showCardSubtitle\" checked>\n        <input type=\"color\" title=\"Subtitle BG\" value=\"#B29FE9\" name=\"subtitle\" condition=\"showCardSubtitle\" selected>\n        <input type=\"color\" title=\"Active BG\" value=\"#161616\" name=\"active\" condition=\"showCardSubtitle\" selected>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\">\n        <input type=\"checkbox\" title=\"Card Icon\" name=\"showIcon\">\n        <input type=\"color\" title=\"Icon Color\" value=\"#C8D814\" name=\"icon\" condition=\"showIcon\" selected>\n        <input type=\"checkbox\" title=\"Card Link\" name=\"showLink\">\n        <input type=\"color\" title=\"Card Overlay\" value=\"#000000\" name=\"over\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showTitle || showSubtitle || showButtons\">\n                <div class=\"title-wrapper\">\n                    <h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>Coming Soon - Herbst 2024</b></h3>\n                    <div class=\"title-wrap\">\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Vorschau</b></h2>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n                            <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                See All\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"item features-image col-12 col-lg-4 col-md-6\">\n                <a href=\"#\">\n                    <div class=\"item-wrapper\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/mokoomba-2023-1640x924.jpg\" alt>\n                            <div class=\"item-content\">\n                                <div class=\"subtitle-wrap\">\n                                    <h5 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-subtitle, .subtitle-wrap\" mbr-if=\"showCardSubtitle\">\n                                        <b>#afrofusion #rock #zimbabwe</b>\n                                    </h5>\n                                </div>\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                        Mokoomba</h4>\n                                    <div class=\"desc-wrapper\">\n                                        <div class=\"desc-wrap\">\n                                            <span mbr-icon class=\"mobi-mbri mobi-mbri-calendar mbr-iconfont\" mbr-if=\"showIcon\"></span>\n                                            <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\" mbr-if=\"showDesc\">\n                                                12 Dec, 2030 to 18 Dec 2030\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <div class=\"link-wrap\" mbr-if=\"showLink\">\n                                        <p class=\"item-link mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-link, .link-wrap\">\n                                            <b>See More</b>\n                                            <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            <div class=\"item features-image col-12 col-lg-4 col-md-6\">\n                <a href=\"#\">\n                    <div class=\"item-wrapper\">\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/2-1080x1080.jpeg\" alt>\n                            <div class=\"item-content\">\n                                <div class=\"subtitle-wrap\">\n                                    <h5 class=\"item-subtitle mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-subtitle, .subtitle-wrap\" mbr-if=\"showCardSubtitle\">\n                                        <b>#afrolation #caboverde</b>\n                                    </h5>\n                                </div>\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\">\n                                        Miroca Paris</h4>\n                                    <div class=\"desc-wrapper\">\n                                        <div class=\"desc-wrap\">\n                                            <span mbr-icon class=\"mobi-mbri mobi-mbri-calendar mbr-iconfont\" mbr-if=\"showIcon\"></span>\n                                            <p class=\"item-desc mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-desc, .desc-wrapper\" mbr-if=\"showDesc\">\n                                                22 Dec, 2030 to 28 Dec 2030\n                                            </p>\n                                        </div>\n                                    </div>\n                                    <div class=\"link-wrap\" mbr-if=\"showLink\">\n                                        <p class=\"item-link mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".item-link, .link-wrap\">\n                                            <b>See More</b>\n                                            <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont\"></span>\n                                        </p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </a>\n            </div>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "u8OwTCfLLi",
+          "_anchor": "features6-2t",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
